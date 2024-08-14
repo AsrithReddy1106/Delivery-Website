@@ -1,0 +1,86 @@
+/* Default styles for larger screens */
+.add {
+    width: 70%;
+    margin-left: max(7vw, 30px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+
+.add form {
+    gap: 20px;
+}
+
+.add-image-upload img {
+    width: 120px;
+}
+
+.add-product-name, .add-product-description {
+    width: max(40%, 280px);
+}
+
+.add-product-name input, .add-product-description textarea {
+    padding: 10px;
+}
+
+.add-category-price {
+    display: flex;
+    gap: 30px;
+}
+
+.add-category-price select, .add-category-price input {
+    max-width: 120px;
+    padding: 10px;
+}
+
+.add-button {
+    padding: 10px;
+    background-color: rgb(255, 68, 0);
+    cursor: pointer;
+    color: white;
+    border: none;
+    max-width: 120px;
+}
+
+/* Media query for phone screens */
+/* @media only screen and (max-width: 600px) {
+    .add {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .add form {
+        gap: 10px;
+    }
+
+    .add-image-upload img {
+        width: 80px;
+    }
+
+    .add-product-name, .add-product-description {
+        width: 100%;
+    }
+
+    .add-product-name input, .add-product-description textarea {
+        padding: 8px;
+    }
+
+    .add-category-price {
+        display: block;
+        gap: 15px;
+    }
+
+    .add-category-price select, .add-category-price input {
+        max-width: 100%;
+        width: 100%;
+        padding: 8px;
+    }
+
+    .add-button {
+        padding: 8px;
+        max-width: 100%;
+        width: 100%;
+    }
+} */

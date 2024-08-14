@@ -1,0 +1,116 @@
+.login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background for better focus */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s;
+}
+
+.login-popup-container {
+    background-color: #fff;
+    color: #808080;
+    width: max(20vw, 320px); /* Slightly wider for better readability */
+    max-width: 90vw;
+    padding: 30px 40px; /* Increased padding for a more spacious look */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a pop-up effect */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.login-popup-title img {
+    cursor: pointer;
+    width: 24px; /* Ensure the close icon is appropriately sized */
+    height: 24px;
+    transition: transform 0.2s;
+}
+
+.login-popup-title img:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+.login-popup-input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduced gap for a tighter look */
+}
+
+.login-popup-input input {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.login-popup-input input:focus {
+    border-color: tomato; /* Highlight input on focus */
+}
+
+.login-popup-container button {
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-popup-container button:hover {
+    background-color: darkred; /* Darken button on hover */
+}
+
+.login-popup-condition {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -10px;
+}
+
+.login-popup-condition input {
+    margin-top: 5px;
+}
+
+.login-popup-condition p {
+    font-size: 12px;
+    color: #808080;
+}
+
+.login-popup-condition span {
+    color: tomato;
+    cursor: pointer;
+}
+
+.sign-up, .Login {
+    cursor: pointer;
+    color: tomato;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
